@@ -1,0 +1,7 @@
+(list 'a 'b 'c)
+(list (list 'george))
+(cdr '((x1 x2) (+ 1 1)))
+(cadr '((x1 x2) (+ 1 2)))
+(pair? (car '(a short list)))
+(memq 'red '((red shoeds) (blue socks)))
+(memq 'red '(red shoes blue socks))
