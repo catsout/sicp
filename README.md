@@ -16,15 +16,19 @@
         - Greatest Common Divisors
         - Example: Testing for Primality
     3. Formulating Abstractions with Higher-Order Procedures
-        - Procedures as Arguments
-        - Constructing Procedures Using lambda
-        - Procedures as General Methods
+        - Procedures as Arguments  
+        [1.29](./Exercise/1/1.29.scm),
+        [1.30](./Exercise/1/1.30.scm),
+        [1.31](./Exercise/1/1.31.scm),
+        [1.32](./Exercise/1/1.32.scm)
+        - Constructing Procedures Using lambda  
+        - Procedures as General Methods  
         [1.35](./Exercise/1/1.35.scm),
         [1.36](./Exercise/1/1.36.scm),
         [1.37](./Exercise/1/1.37.scm),
         [1.38](./Exercise/1/1.38.scm),
-        [1.39](./Exercise/1/1.39.scm),
-        - Procedures as Returned Values
+        [1.39](./Exercise/1/1.39.scm)
+        - Procedures as Returned Values  
         [1.40](./Exercise/1/1.40.scm),
         [1.41](./Exercise/1/1.41.scm),
         [1.42](./Exercise/1/1.42.scm),
