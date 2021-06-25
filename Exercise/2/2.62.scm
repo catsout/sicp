@@ -1,3 +1,6 @@
+#!/bin/scheme --script
+
+
 (define (element-of-set? x set)
   (cond ((null? set) #f)
         ((= x (car set)) #t)
@@ -19,5 +22,6 @@
 
 (define myset (list 1 2 4 6 8 10))
 (define other (list 3 5 7 8))
-(adjoin-set 5 myset)
-(union-set myset other)
+(display (adjoin-set 5 myset))
+(newline)
+(display (union-set myset other))

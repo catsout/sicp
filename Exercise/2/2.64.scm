@@ -1,3 +1,5 @@
+#!/bin/scheme --script
+
 (define (entry tree) (car tree))
 (define (left-branch tree) (cadr tree))
 (define (right-branch tree) (caddr tree))
@@ -44,4 +46,4 @@
 				(remain-set (cdr right-re)))
 			(cons (make-tree this-entry left-tree right-tree) remain-set)))))))
 (define myset (list 1 3 7 8 19 20 41 44 56 66 73 82 89 99 102))
-(list->tree myset)
+(display (list->tree myset))

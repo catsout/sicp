@@ -1,3 +1,5 @@
+#!/bin/scheme --script
+
 (define (element-of-set? x set)
   (cond ((null? set) #f)
         ((= x (car set)) #t)
@@ -10,4 +12,4 @@
         (else (cons (car set) (adjoin-set x (cdr set))))))
 
 (define myset (list 1 2 4 6 8 10))
-(adjoin-set 5 myset)
+(display (adjoin-set 5 myset))

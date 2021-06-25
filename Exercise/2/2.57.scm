@@ -1,4 +1,4 @@
-
+#!/bin/scheme --script
 
 (define (variable? x) (symbol? x))
 (define (same-variable? x y) (and (variable? x) (variable? y) (eq? x y)))
@@ -51,10 +51,12 @@
                                      (deriv (base-exponentiation exp) var))))
         (else (error "unknow exp"))))
 
-(deriv '(+ x 2) 'x)
-(deriv '(+ (* x y) (* (+ y 3) x)) 'x)
-(deriv '(** (* x y) 2) 'x)
-(deriv '(* (* x y) (+ x 3)) 'x)
-(deriv '(* x y (+ x 3)) 'x)
-
-  
+(display (deriv '(+ x 2) 'x))
+(newline)
+(display (deriv '(+ (* x y) (* (+ y 3) x)) 'x))
+(newline)
+(display (deriv '(** (* x y) 2) 'x))
+(newline)
+(display (deriv '(* (* x y) (+ x 3)) 'x))
+(newline)
+(display (deriv '(* x y (+ x 3)) 'x))

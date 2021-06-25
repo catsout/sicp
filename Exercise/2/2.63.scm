@@ -1,3 +1,5 @@
+#!/bin/scheme --script
+
 (define (entry tree) (car tree))
 (define (left-branch tree) (cadr tree))
 (define (right-branch tree) (caddr tree))
@@ -28,5 +30,6 @@
 						  (make-tree 110
 									 (make-tree 101 '() '())
 									 (make-tree 111 '() '())))) 
-(tree->list-1 mytree)
-(tree->list-2 mytree)
+(display (tree->list-1 mytree))
+(newline)
+(display (tree->list-2 mytree))

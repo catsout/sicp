@@ -1,3 +1,4 @@
+#!/bin/scheme --script
 
 (define (element-of-set? x set)
   (cond ((null? set) #f)
@@ -18,7 +19,9 @@
 
 (define myset (list 1 2 3 4 5 6))
 (define other (list 2 4 6 8 10))
-(union-set myset other)
-(intersection-set myset other)
+
+(display (union-set myset other))
+(newline)
+(display (intersection-set myset other))
 
   

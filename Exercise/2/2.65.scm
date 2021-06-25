@@ -1,3 +1,5 @@
+#!/bin/scheme --script
+
 (define (entry tree) (car tree))
 (define (left-branch tree) (cadr tree))
 (define (right-branch tree) (caddr tree))
@@ -65,6 +67,7 @@
 
 (define myset (list 1 3 7 8 19 20 41 44 56 66 73 82 89 99 102))
 (define myset2 (list 2 4 9 19 44 502 2344))
-(union-tree (list->tree myset) (list->tree myset2))
-(intersection-tree (list->tree myset) (list->tree myset2))
+(display (union-tree (list->tree myset) (list->tree myset2)))
+(newline)
+(display (intersection-tree (list->tree myset) (list->tree myset2)))
 
