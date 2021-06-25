@@ -79,11 +79,27 @@
         [2.42](./Exercise/2/2.42.scm)
         - Example: A Picture Language  
     3. Symbolic Data
-        - Qotation
-        - Example: Symbolic Differentiation
-        - Example: Representing Sets
-        - Example: Huffman Encoding Trees
-    4. Multiple Representations for Abstract Data
+        - Qotation  
+        [2.53](./Exercise/2/2.53.scm),
+        [2.54](./Exercise/2/2.54.scm)
+        - Example: Symbolic Differentiation  
+        [2.56](./Exercise/2/2.56.scm),
+        [2.57](./Exercise/2/2.57.scm),
+        [2.58](./Exercise/2/2.58.scm),
+        [2.59](./Exercise/2/2.59.scm),
+        [2.61](./Exercise/2/2.61.scm),
+        [2.62](./Exercise/2/2.62.scm)
+        - Example: Representing Sets  
+        [2.63](./Exercise/2/2.63.scm),
+        [2.64](./Exercise/2/2.64.scm),
+        [2.65](./Exercise/2/2.65.scm),
+        [2.66](./Exercise/2/2.66.scm)
+        - Example: Huffman Encoding Trees  
+        [2.67](./Exercise/2/2.67.scm),
+        [2.68](./Exercise/2/2.68.scm),
+        [2.69](./Exercise/2/2.69.scm),
+        [2.70](./Exercise/2/2.70.scm)
+    4. Multiple Representations for Abstract Data  
         - Representations for Complex Numbers
         - Tagged data
         - Data-Directed Programming and Additivity
