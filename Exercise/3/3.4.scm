@@ -1,1 +1,27 @@
 #!/bin/scheme --script
+
+
+(define (make-account balance password)
+  (define (call-the-cops) "cops coming")
+  (define (withdraw amount)
+    (if (>= balance amount)
+      (begin (set! balance (- balance amount))
+             balance)
+      "Insufficient funds"))
+  (define (deposit amount)
+    (set! balance (+ balance amount))
+    balance)
+  (define (dispatch pass m)
+    (let ((count 0))
+      (cond ((eq? pass password)
+             (cond ((eq? m 'withdraw) withdraw)
+                   ((eq? m 'deposit) deposit)
+                   (else (error "Unknown request -- MAKE-ACCOUNT" m))))
+            ((< count 8) (set! count (+ count 1)) "Incorrect password"))
+            (else (call-the-cops)))))
+  dispatch)
+
+(define acc (make-account 100 'abcd))
+(display ((acc 'abcd 'withdraw) 50))
+(newline)
+(display ((acc 'abc 'withdraw) 50))
